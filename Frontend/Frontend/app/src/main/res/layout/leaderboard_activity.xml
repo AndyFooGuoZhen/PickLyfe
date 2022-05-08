@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeaderBoard.LeaderBoardActivity"
+    android:background="#F3C7C7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#E55E5E">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:text="Leaderboard"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/titleBar"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.85"
+            android:background="#E55E5E"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="USER"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold|italic"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="HIGH SCORE"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold|italic"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1"
+        android:gravity="center_horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="550dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.85"
+            android:id="@+id/leaderBoardRecyclerView">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</RelativeLayout>

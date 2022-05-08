@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".UpdateScreen.NewAnnouncement">
+    <Button
+        android:id="@+id/new_ann_BackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@+id/new_ann_TitleLayout"
+        android:text="Back" />
+    <TextView
+        android:id="@+id/new_ann_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/new_ann_TitleLayout"
+        android:layout_below="@id/new_ann_BackButton"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Title"
+        android:textSize="24dp" />
+
+    <Spinner
+        android:id="@+id/new_ann_Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/new_ann_TitleLayout"
+        android:layout_above="@id/new_ann_TitleLayout"
+        android:layout_marginBottom="10dp" />
+
+
+    <LinearLayout
+        android:id="@+id/new_ann_TitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/new_ann_Title"
+        android:padding="5dp"
+        android:background="@drawable/border_background">
+
+        <EditText
+            android:id="@+id/new_ann_TitleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:layout_marginStart="5dp"
+            android:hint="Enter Title"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/new_ann_Description"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/new_ann_TitleLayout"
+        android:layout_below="@+id/new_ann_TitleLayout"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Description"
+        android:textSize="24dp" />
+
+    <LinearLayout
+        android:id="@+id/new_ann_DescriptionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/new_ann_Description"
+        android:padding="5dp"
+        android:background="@drawable/border_background"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/new_ann_DescEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:layout_marginStart="5dp"
+            android:hint="Describe a little more about the post"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/new_ann_ApplyChangesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/new_ann_DescriptionLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="POST"/>
+
+</RelativeLayout>

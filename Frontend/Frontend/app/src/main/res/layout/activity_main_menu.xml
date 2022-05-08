@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main_Menu_Activity">
+
+    <TextView
+        android:id="@+id/main_WelcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_extrabold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:text="Welcome!"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/main_FriendButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_chatButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="FRIENDS" />
+
+    <Button
+        android:id="@+id/main_ContinueButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_FriendButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Continue" />
+
+    <Button
+        android:id="@+id/main_NewGameButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_ContinueButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="New Game" />
+
+
+    <Button
+        android:id="@+id/main_ExitButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_LeaderboardButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Exit" />
+
+
+    <ImageView
+        android:id="@+id/main_PerksButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/main_ExitButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/inventory" />
+
+    <Button
+        android:id="@+id/main_LeaderboardButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/main_NewGameButton"
+        android:layout_marginTop="25dp"
+        android:text="Leaderboard" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation" />
+
+    <Button
+        android:id="@+id/main_chatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_WelcomeText"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+
+        android:text="CHAT"
+         />
+
+
+</RelativeLayout>
+

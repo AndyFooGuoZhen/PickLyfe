@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#FFEEDE"
+    tools:context=".PerkScreen.Perk_Activity">
+
+    <TextView
+        android:id="@+id/perk_DiscoveredTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="12/12"
+        android:textColor="#2B2828"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/perk_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <TextView
+        android:id="@+id/perk_NameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/perk_RecyclerView"
+        android:layout_alignStart="@id/perk_DescriptionHeader"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Name:"
+        android:textColor="#2B2828"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/perk_RarityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/perk_RecyclerView"
+        android:layout_alignEnd="@id/perk_RecyclerView"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Rarity: X"
+        android:textColor="#2B2828"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/perk_DescriptionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/perk_RecyclerView"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/border_background">
+
+        <TextView
+            android:id="@+id/perk_DescriptionHeader"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="Description"
+            android:textColor="#2B2828"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/perk_DescriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_below="@id/perk_DescriptionHeader"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a efficitur dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.Praesent tempus nisi leo, vitae luctus mi pulvinar ac. Ut a tellus sollicitudin ex dictum convallis non ultricies augue. Nam vel convallis velit."
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/perk_SelectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#304B73"
+        android:text="Select"
+        android:textSize="15sp" />
+
+</RelativeLayout>

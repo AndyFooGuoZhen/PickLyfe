@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".GameScreen.GameActivity"
+    android:background="#F3C7C7">
+
+    <RelativeLayout
+        android:id="@+id/statsHeading"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#E55E5E">
+
+        <LinearLayout
+            android:id="@+id/inStatsHeading"
+            android:layout_width="1000px"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25">
+                <ProgressBar
+                    android:id="@+id/stats1pb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminateOnly="false"
+                    android:progressDrawable="@drawable/cirular_progressbar"
+                    android:rotation="-90"
+                    android:max="200"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/money_icon"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25">
+                <ProgressBar
+                    android:id="@+id/stats2pb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminateOnly="false"
+                    android:progressDrawable="@drawable/cirular_progressbar"
+                    android:rotation="-90"
+                    android:max="200"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/health_icon_foreground"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25">
+                <ProgressBar
+                    android:id="@+id/stats3pb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminateOnly="false"
+                    android:progressDrawable="@drawable/cirular_progressbar"
+                    android:rotation="-90"
+                    android:max="200"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/intelligence_icon_foreground"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25">
+                <ProgressBar
+                    android:id="@+id/stats4pb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminateOnly="false"
+                    android:progressDrawable="@drawable/cirular_progressbar"
+                    android:rotation="-90"
+                    android:max="200"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/relationship_icons_foreground"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/scoreHeading"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/statsHeading"
+        android:layout_marginTop="0dp"
+        android:background="#966969">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0pts"
+            android:id="@+id/scoreTxt"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="1000px"
+        android:layout_height="200px"
+        android:layout_below="@+id/scoreHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Hello"
+        android:background="@drawable/titleborder"
+        android:translationZ="90dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:backgroundTint="#966969"
+        android:textStyle="bold|italic"
+        />
+
+    <TextView
+        android:id="@+id/gameTxt"
+        android:layout_width="1000px"
+        android:layout_height="1200px"
+        android:layout_below="@id/statsHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/textview_border"
+        android:backgroundTint="#E55E5E"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="hello"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/option1Btn"
+        android:layout_width="1000px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/textview_border"
+        android:backgroundTint="#E55E5E"
+        android:padding="15dp"
+        android:textSize="20dp"/>
+        <Button
+            android:layout_width="1000px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/option1Btn"
+            android:id="@+id/option2Btn"
+            android:background="@drawable/textview_border"
+            android:backgroundTint="#E55E5E"
+            android:padding="15dp"
+            android:textSize="20dp"/>
+
+
+</RelativeLayout>

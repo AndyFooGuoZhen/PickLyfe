@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F3C7C7"
+    tools:context=".Chat.PrivateORGlobalChatActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#E55E5E"
+
+        android:id="@+id/selectChatHeader">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+           android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:text="Private/Global Chat Selection"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Global Chat"
+        android:id="@+id/globalChatBtn"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Private Chat"
+        android:layout_below="@+id/globalChatBtn"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/privateChatBtn"/>
+
+
+</RelativeLayout>

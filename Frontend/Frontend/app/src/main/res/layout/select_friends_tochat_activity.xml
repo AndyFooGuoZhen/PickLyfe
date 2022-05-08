@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F3C7C7"
+    tools:context=".Chat.SelectFriendsToChatActivity"
+    android:id="@+id/friendToChatPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#E55E5E"
+        android:id="@+id/friendToChatHeader">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:gravity="center"
+            android:text="CHAT WITH FRIENDS"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/friendToChatHeader"
+        android:id="@+id/searchHeader"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <android.widget.SearchView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.90"
+            android:id="@+id/searchBar"
+            android:background="@drawable/textview_border"
+            android:iconifiedByDefault="false"
+            android:focusable="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchHeader"
+        android:id="@+id/recyclerTitle"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/titleBar"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.85"
+            android:background="#E55E5E"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="USERNAME"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold|italic"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:id="@+id/selectToChat"
+                android:text="Select"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold|italic"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/recyclerTitle"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1"
+        android:gravity="center_horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="550dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.85"
+            android:id="@+id/friendsRecyclerView"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+</RelativeLayout>

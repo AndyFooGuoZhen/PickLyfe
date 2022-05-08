@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#E55E5E"
+    tools:context=".Chat.PrivateChatActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#E55E5E"
+        android:id="@+id/chatHeader">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:text="Private CHAT"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="585dp"
+        android:layout_below="@+id/chatHeader"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#F3C7C7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chatRecyclerView"
+        android:weightSum="1"
+        android:gravity="center">
+        <EditText
+            android:layout_width="0dp"
+            android:padding="10dp"
+            android:layout_weight="0.70"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/textview_border"
+            android:backgroundTint="@color/white"
+            android:id="@+id/msgEditTxt"
+            android:hint="Message"/>
+        <Button
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:id="@+id/sendBtn"
+            android:text="Send"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

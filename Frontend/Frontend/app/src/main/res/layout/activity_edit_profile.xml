@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#FFEEDE"
+    tools:context=".UserProfile.Edit_Profile_Activity">
+
+    <RelativeLayout
+        android:id="@+id/editProfile_NameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editProfile_ImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_background"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/editProfile_NameEditText"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:fontFamily="@font/poppins"
+            android:hint="Name"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/editProfile_NameLayout"
+        android:layout_alignStart="@id/editProfile_AboutMeLayout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="About Me"
+        android:textColor="#2B2828"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/editProfile_AboutMeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editProfile_NameLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border_background"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/editProfile_AboutMeEditText"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:fontFamily="@font/poppins"
+            android:gravity="top|left"
+            android:hint="Describe a little about yourself"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/editProfile_ImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitXY"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/editProfile_ApplyChangesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#304B73"
+        android:text="Apply Changes" />
+
+    <Button
+        android:id="@+id/editProfile_BackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="#304B73"
+        android:text="Back" />
+
+</RelativeLayout>

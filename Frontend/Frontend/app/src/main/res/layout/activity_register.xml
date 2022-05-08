@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#FFEEDE"
+    tools:context=".Login.Register_Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/register_UsernameLayout"
+        android:layout_alignBottom="@id/register_UsernameLayout"
+        android:layout_marginBottom="55dp"
+        android:fontFamily="@font/poppins"
+        android:text="Name"
+        android:textColor="#2B2828"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/register_UsernameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/border_background"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/register_UsernameEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:ems="12"
+            android:fontFamily="@font/poppins"
+            android:hint="eg: John Doe"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/register_EmailLayout"
+        android:layout_alignBottom="@id/register_EmailLayout"
+        android:layout_marginBottom="55dp"
+        android:fontFamily="@font/poppins"
+        android:text="Email"
+        android:textColor="#2B2828"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/register_EmailLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_UsernameLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border_background"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/register_EmailEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:ems="12"
+            android:fontFamily="@font/poppins"
+            android:hint="yourname@email.com"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/register_PasswordLayout"
+        android:layout_alignBottom="@id/register_PasswordLayout"
+        android:layout_marginBottom="55dp"
+        android:fontFamily="@font/poppins"
+        android:text="Password"
+        android:textColor="#2B2828"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/register_PasswordLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_EmailLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border_background"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/register_PasswordEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:ems="12"
+            android:fontFamily="@font/poppins"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/register_ConfirmPasswordLayout"
+        android:layout_alignBottom="@id/register_ConfirmPasswordLayout"
+        android:layout_marginBottom="55dp"
+        android:fontFamily="@font/poppins"
+        android:text="Confirm Password"
+        android:textColor="#2B2828"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/register_ConfirmPasswordLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_PasswordLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border_background"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <EditText
+            android:id="@+id/register_ConfirmPasswordEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:ems="12"
+            android:fontFamily="@font/poppins"
+            android:hint="Re-enter Password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register_RegisterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_ConfirmPasswordLayout"
+        android:layout_alignStart="@+id/register_ConfirmPasswordLayout"
+        android:layout_alignEnd="@+id/register_ConfirmPasswordLayout"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/rounded_button"
+        android:text="Register"
+        android:textSize="16sp"
+        app:backgroundTint="@null" />
+
+    <TextView
+        android:id="@+id/register_LoginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_RegisterButton"
+        android:layout_alignStart="@+id/register_RegisterButton"
+        android:layout_alignEnd="@+id/register_RegisterButton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/poppins"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+</RelativeLayout>

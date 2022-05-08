@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EndGame.EndActivity"
+    android:background="#F3C7C7"
+    android:id="@+id/mainRel">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#E55E5E"
+        android:id="@+id/winloseHeader">
+
+        <TextView
+            android:id="@+id/winloseStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="YOU WON"
+            android:textSize="60dp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/userStatHeader"
+        android:layout_width="match_parent"
+        android:layout_height="900px"
+        android:layout_below="@+id/winloseHeader"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="Score"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/scoreTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.07"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="1212" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="HighScore"
+            android:textStyle="bold|italic"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/hScoreTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.07"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="1212" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="Number of Events Survived"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/nEventTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.07"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="1212" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mainmenuBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userStatHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+        android:background="@drawable/textview_border"
+        android:padding="15dp"
+        android:text="Main Menu"
+        android:textSize="35dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mainmenuBtn"
+        android:text="Play Again"
+        android:layout_marginTop="30dp"
+        android:textSize="35dp"
+        android:padding="15dp"
+        android:id="@+id/playBtn"
+        android:background="@drawable/textview_border" />
+
+
+
+
+
+
+</RelativeLayout>
